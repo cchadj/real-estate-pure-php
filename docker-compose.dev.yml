@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+    networks:
+      - mynet
+
+networks:
+  mynet:
+    external: true
+    name: "mynet"

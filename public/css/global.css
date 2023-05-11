@@ -1,0 +1,263 @@
+:root {
+    --primary-color: white;
+    --secondary-color: rgb(61, 68, 73);
+    --secondary-background-color: #2a3338;
+    --highlight-color: #3282b8;
+    --even-row-color: var(--secondary-color)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    color: #c9d1d9;
+    background: #0d1117;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    /*overflow: hidden;*/
+}
+
+main {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+       line-height: 1.2
+}
+
+header {
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+nav {
+    display: contents;
+}
+
+ul.toolbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 185px;
+    color: #f1f1f1;
+    background-color: var(--secondary-background-color);
+    height: 100vw;
+    position: fixed;
+}
+
+li a {
+    display: block;
+    color: #f1f1f1;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+/*ul.toolbar {*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    width: 100%;*/
+/*    display: block;*/
+/*    background-color: red;*/
+/*}*/
+
+/*ul.toolbar li {*/
+/*   display: inline;*/
+/*   float: left;*/
+/*}*/
+
+/*ul.toolbar a {*/
+/*    display: block;*/
+/*    padding: 8px;*/
+/*    text-decoration: none;*/
+/*}*/
+/*ul {*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    width: 200px;*/
+/*    background-color: #f1f1f1;*/
+/*}*/
+/*ul {*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    width: 25%;*/
+/*    background-color: #f1f1f1;*/
+/*    height: 100%; !* Full height *!*/
+/*    position: fixed; !* Make it stick, even on scroll *!*/
+/*    overflow: auto; !* Enable scrolling if the sidenav has too much content *!*/
+/*}*/
+
+/*li a {*/
+/*    display: block;*/
+/*    color: #000;*/
+/*    padding: 8px 16px;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*!* Change the link color on hover *!*/
+/*li a:hover {*/
+/*    background-color: #555;*/
+/*    color: white;*/
+/*}*/
+
+.message {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.success {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}
+
+.form-with-message {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.form-with-message #banner {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form > div {
+    margin-bottom: 7.5px;
+}
+
+input[type=date], input[type=number], input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+table {
+    overflow-y: scroll;
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #2a3338;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+thead th {
+    background-color: #161b22;
+    position: sticky;
+    top: 0;
+}
+
+th {
+    border-bottom: 1px solid #0d1117;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    /*background-color: #0d1117;*/
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: var(--even-row-color);
+}
+
+tr:hover {
+    background-color: #161b22;
+}
+
+.hidden {
+    display: none;
+}
+
+img.tableImage {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.tableContainer {
+    max-height: 80%;
+    /*height: 100px;*/
+    overflow: auto;
+}
+
+/*.tablePageContainer > * {*/
+/*   margin-top: 20px;*/
+/*}*/

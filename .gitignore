@@ -1,0 +1,12 @@
+database/data
+.ipynb_checkpoints
+.env
+.idea/
+.DS_Store
+
+public/_phpinfo.php
+public/_xdebuginfo.php
+public/images/
+
+composer.phar
+/vendor/
