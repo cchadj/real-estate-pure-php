@@ -28,7 +28,7 @@ composer dump-autoload -o && php bin/migrate.php && php bin/seed.php
 Explanation ( Optional ) :
 
 This will create 3 containers, one for MySql ( database ) , one for the web server ( web ), and one for phpmyadmin.
-Phpmyadmin was included for my convenience os I can see the state of the database easily during development.
+Phpmyadmin was included for my convenience so I can see the state of the database easily during development.
 
 `docker compose up -d` This creates the containers for each service based on `docker-compose.yml`. The `-d` flag is for convenience to run in detached mode so the terminal is given back to you ( otherwise open another terminal window ).
 
